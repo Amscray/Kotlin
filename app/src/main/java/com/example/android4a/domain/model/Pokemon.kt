@@ -1,4 +1,4 @@
-package com.example.android4a.model
+package com.example.android4a.domain.model
 
 class Pokemon {
     private val name: String? = null

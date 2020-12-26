@@ -5,11 +5,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.android4a.API.PokeApi
+import com.example.android4a.data.API.PokeApi
 import com.example.android4a.R
-import com.example.android4a.adapter.ListAdapter
-import com.example.android4a.model.Pokemon
-import com.example.android4a.model.RestPokemonResponse
+import com.example.android4a.data.adapter.ListAdapter
+import com.example.android4a.domain.model.Pokemon
+import com.example.android4a.domain.model.RestPokemonResponse
 import kotlinx.android.synthetic.main.activity_main3.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,10 +18,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-class MainActivity3 : AppCompatActivity() {
+class GoAPI : AppCompatActivity() {
 
-    val Pokemon: MutableList<Pokemon> = ArrayList()
-     var recyclerView: RecyclerView? = null
+
     var mAdapter: ListAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,8 +28,7 @@ class MainActivity3 : AppCompatActivity() {
         setContentView(R.layout.activity_main3)
 
         activity_main3.layoutManager = LinearLayoutManager(this)
-      //  activity_main3.adapter = ListAdapter(Pokemon, this)
-       // mAdapter = ListAdapter(Pokemon,this)
+
         makeApiCall()
     }
 

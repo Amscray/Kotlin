@@ -1,9 +1,8 @@
-package com.example.android4a.API
+package com.example.android4a.data.API
 
-import com.example.android4a.model.RestPokemonResponse
+import com.example.android4a.domain.model.RestPokemonResponse
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Query
 
 
 interface PokeApi {

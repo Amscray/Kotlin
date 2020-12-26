@@ -1,4 +1,4 @@
-package com.example.android4a.model
+package com.example.android4a.domain.model
 
 class RestPokemonResponse{
     private val count: Int? = null

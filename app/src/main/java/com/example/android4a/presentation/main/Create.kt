@@ -10,7 +10,7 @@ import com.example.android4a.domain.entity.User
 import kotlinx.android.synthetic.main.activity_main2.*
 import org.koin.android.ext.android.inject
 
-class MainActivity2 : AppCompatActivity() {
+class Create : AppCompatActivity() {
 
 
 

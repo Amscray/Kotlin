@@ -23,19 +23,19 @@ class MainActivity : AppCompatActivity() {
                 is LoginSuccess -> {
                     MaterialAlertDialogBuilder(this)
                         .setTitle("Connection")
-                        .setMessage("Compte trouvé")
+                        .setMessage("Compte existant")
                         .setPositiveButton("OK") { dialog, which ->
                             dialog.dismiss()
                         }
                         .show()
-                    val monIntent : Intent =  Intent(this, MainActivity3::class.java)
+                    val monIntent : Intent =  Intent(this, GoAPI::class.java)
                     startActivity(monIntent)
 
                 }
                 LoginError -> {
                     MaterialAlertDialogBuilder(this)
                         .setTitle("Erreur")
-                        .setMessage("Compte inconnu")
+                        .setMessage("Veuillez créer un compte")
                         .setPositiveButton("OK") { dialog, which ->
                             dialog.dismiss()
                         }
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             mainViewModel.onClickedLogin(login_edit.text.toString().trim(), password_edit.text.toString())
         }
         create_account_button.setOnClickListener(){
-            val monIntent : Intent =  Intent(this,MainActivity2::class.java)
+            val monIntent : Intent =  Intent(this,Create::class.java)
             startActivity(monIntent)
         }
     }

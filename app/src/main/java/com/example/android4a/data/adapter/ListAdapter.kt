@@ -1,4 +1,4 @@
-package com.example.android4a.adapter
+package com.example.android4a.data.adapter
 
 import android.content.Context
 
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android4a.R
-import com.example.android4a.adapter.ListAdapter.ViewHolder
-import com.example.android4a.model.Pokemon
+import com.example.android4a.data.adapter.ListAdapter.ViewHolder
+import com.example.android4a.domain.model.Pokemon
 
 
 class ListAdapter(val items: MutableList<Pokemon>?, val context: Context) : RecyclerView.Adapter<ViewHolder>() {
