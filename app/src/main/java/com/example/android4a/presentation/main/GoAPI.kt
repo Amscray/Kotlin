@@ -4,13 +4,12 @@ package com.example.android4a.presentation.main
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.android4a.data.API.PokeApi
 import com.example.android4a.R
 import com.example.android4a.data.adapter.ListAdapter
 import com.example.android4a.domain.model.Pokemon
 import com.example.android4a.domain.model.RestPokemonResponse
-import kotlinx.android.synthetic.main.activity_main3.*
+import kotlinx.android.synthetic.main.pokemon_api.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -25,7 +24,7 @@ class GoAPI : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main3)
+        setContentView(R.layout.pokemon_api)
 
         activity_main3.layoutManager = LinearLayoutManager(this)
 

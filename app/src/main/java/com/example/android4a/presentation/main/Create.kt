@@ -4,10 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import android.widget.Toast.LENGTH_SHORT
 import com.example.android4a.R
 import com.example.android4a.domain.entity.User
-import kotlinx.android.synthetic.main.activity_main2.*
+import kotlinx.android.synthetic.main.creation_compte.*
 import org.koin.android.ext.android.inject
 
 class Create : AppCompatActivity() {
@@ -18,7 +17,7 @@ class Create : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.creation_compte)
 
 
         Create_account.setOnClickListener(){
